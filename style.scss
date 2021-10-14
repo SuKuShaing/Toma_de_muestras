@@ -58,15 +58,22 @@ body {
         text-align: center;
         transition: flex 0.5s;
         cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         
         img {
-            width: 1.4rem;
-            height: 1.4rem;
+            width: 1.5rem;
+            height: 1.5rem;
         }
     }
-
+    
+    &__item:first-child {
+        flex: 0.5;
+    }
+    
     &__item:hover {
-        flex: 2;
+        flex: 1.5;
     }
 }
 
