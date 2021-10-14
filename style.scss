@@ -1,0 +1,107 @@
+//Logo CENTROS MEDICOS E INVERSIONES lTDA
+//Azul Profundo del logo #1e243b;
+//Amarillo del logo #ffc107;
+
+//LOGO ARLO
+//Celeste: #00badb;
+//Verde: #006660;
+//Verde Obscuro: #001e15;
+
+
+$Color-de-fondo: white;
+$Color-Principal: #001e15;
+$Color-Secundario: #007E96;
+$Color-Terciario: #CCECF4;
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    scroll-behavior: smooth;
+    /* para que al hacer scroll lo haga de manera suave */
+}
+
+body {
+    background-color: $Color-de-fondo;
+    color: $Color-Principal;
+    // width: 1080px;
+    // display: flex;
+    // flex-direction: column;
+    // justify-content: center;
+    // align-items: center;
+    margin: 0 auto;
+}
+
+.header{
+    // position:fixed;
+    position: sticky;
+    top:0;
+    // left: 0;
+    // right: 0;
+}
+
+.menu {
+    // width: 1080px;
+    // position: -webkit-sticky;
+    // position: sticky;
+    // top: 0;
+    // position: static;
+    display: flex;
+
+    // flex-grow: 1;
+
+    &__item {
+        // flex-grow: 1;
+        flex: 1;
+        outline: 1px solid gold;
+        list-style: none;
+        line-height: 3rem;
+        text-align: center;
+        transition: flex 0.5s;
+        cursor: pointer;
+    }
+
+    &__item:hover {
+        flex: 2;
+    }
+
+    &__item a {
+        text-decoration: none;
+        height: 100%;
+        width: 100%;
+    }
+}
+
+.main {
+    &__section {
+        outline: 1px solid cyan;
+        height: 90vh;
+    }
+}
+
+.footer {
+    outline: 1px solid magenta;
+    height: 25vh;
+}
+
+
+////////////////////////////////////////////////////
+////////////////// @ MEDIA QUERY ///////////////////
+////////////////////////////////////////////////////
+
+@media screen and (min-width: 500px) {
+    body {
+        background-color: black;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    body {
+        background-color: red;
+    }
+}
