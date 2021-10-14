@@ -1,3 +1,1 @@
-// Quede en la maquetación, ahora que todo funciona y se desplaza
-// hay que maquetar los Query
-// y el contenido 
+//hacer que al deslizar te diga donde ésta, marcando en el menu

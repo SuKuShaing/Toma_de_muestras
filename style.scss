@@ -39,54 +39,47 @@ body {
 
 .header{
     // position:fixed;
+    //Esto es para que el menu se desplace a lo largo de la pagina
     position: sticky;
-    top:0;
+    top: 0;
     // left: 0;
     // right: 0;
 }
 
 .menu {
-    // width: 1080px;
-    // position: -webkit-sticky;
-    // position: sticky;
-    // top: 0;
-    // position: static;
     display: flex;
 
-    // flex-grow: 1;
-
     &__item {
-        // flex-grow: 1;
         flex: 1;
         outline: 1px solid gold;
         list-style: none;
+        font-size: 1.4rem;
         line-height: 3rem;
         text-align: center;
         transition: flex 0.5s;
         cursor: pointer;
+        
+        img {
+            width: 1.4rem;
+            height: 1.4rem;
+        }
     }
 
     &__item:hover {
         flex: 2;
-    }
-
-    &__item a {
-        text-decoration: none;
-        height: 100%;
-        width: 100%;
     }
 }
 
 .main {
     &__section {
         outline: 1px solid cyan;
-        height: 90vh;
+        min-height: 90vh;
     }
 }
 
 .footer {
     outline: 1px solid magenta;
-    height: 25vh;
+    min-height: 25vh;
 }
 
 
@@ -102,6 +95,6 @@ body {
 
 @media screen and (min-width: 1000px) {
     body {
-        background-color: red;
+        background-color: LightYellow;
     }
 }

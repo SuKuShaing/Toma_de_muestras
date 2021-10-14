@@ -1,0 +1,2 @@
+# Ignora la carpeta assets, ignorará todo dentro de esa carpeta
+/assets/*
