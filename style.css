@@ -10,12 +10,25 @@ html {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   scroll-behavior: smooth;
   /* para que al hacer scroll lo haga de manera suave */
+  color: #001e15;
+}
+
+html h1 {
+  font-size: 4rem;
+}
+
+html h2 {
+  font-size: 1.5rem;
+}
+
+html p {
+  font-size: 1,4rem;
 }
 
 body {
-  background-color: white;
-  color: #001e15;
   margin: 0 auto;
+  background-color: white;
+  max-width: 1200px;
 }
 
 .header {
@@ -75,6 +88,47 @@ body {
 .main__section {
   outline: 1px solid cyan;
   min-height: 90vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#muestrasSlide {
+  padding: 40px 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: wrap;
+      flex-flow: wrap;
+  gap: 20px;
+}
+
+#muestrasSlide .card {
+  padding: 25px;
+  min-width: 300px;
+  max-width: 550px;
+  height: 250px;
+  border-radius: 20px;
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+          box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+}
+
+#muestrasSlide .imagen_nuestra {
+  overflow: hidden;
+  background-image: url("./assets/img/muestras.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .footer {
@@ -84,7 +138,7 @@ body {
 
 @media screen and (min-width: 500px) {
   body {
-    background-color: black;
+    background-color: lightblue;
   }
 }
 
