@@ -18,7 +18,7 @@ html h1 {
 }
 
 html h2 {
-  font-size: 1.5rem;
+  font-size: 2rem;
 }
 
 html p {
@@ -103,7 +103,7 @@ body {
           align-items: center;
 }
 
-#muestrasSlide {
+.main__section--cards {
   padding: 40px 20px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -111,9 +111,12 @@ body {
   -ms-flex-flow: wrap;
       flex-flow: wrap;
   gap: 20px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-#muestrasSlide .card {
+.main__section--cards .card {
   padding: 25px;
   min-width: 300px;
   max-width: 550px;
@@ -123,12 +126,29 @@ body {
           box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
 }
 
-#muestrasSlide .imagen_nuestra {
+.main__section--cards .imagen_nuestra {
   overflow: hidden;
   background-image: url("./assets/img/muestras.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+}
+
+#sistemaSlide {
+  padding: 30px 20px;
+}
+
+#sistemaSlide p {
+  text-align: center;
+}
+
+.main__section--carrousel {
+  width: 90%;
+  outline: 1px solid red;
+}
+
+.main__section--carrousel .tarjetaValor {
+  outline: 1px dotted darkblue;
 }
 
 .footer {
