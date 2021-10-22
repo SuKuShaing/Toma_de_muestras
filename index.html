@@ -64,24 +64,15 @@
         <section id="okt" class="main__section">
             <section class="nosotres"></section>
             <section class="contactanos">
-                <form action="mailto:sebastian.sanhueza.t@usach.cl" method="post" enctype="text/plain">
-                    <label for="nombre">
-                        <span>¿Cuál es tu nombre?</span>
-                        <input type="text" name="nombre" id="nombre" required autocomplete="name" >
-                    </label>
-                    <label for="correo">
-                        <span>¿Cuál es tu correo?</span>
-                        <input type="email" name="correo" id="correo" required autocomplete="email">
-                    </label>
-                    <label for="pais">
-                        <span>¿En qué pais vives?</span>
-                        <input type="text" name="pais" id="pais" required autocomplete="country">
-                    </label>
-                    <label for="cp">
-                        <span>¿Cuál es tu codigo postal?</span>
-                        <input type="number" name="cp" id="cp" required autocomplete="postal-code">
-                    </label>
-                    <input type="submit" name="" id="">
+                <form action="enviar.php" method="post">
+                    <input type="text" name="name" id="name" class="name" placeholder="NOMBRE">
+                    <input type="text" name="mail" id="mail" class="email" placeholder="CORREO">
+                    <input type="text" name="phone" id="subject" class="subject" placeholder="TELÉFONO">
+                    <textarea name="message" class="message" placeholder="MENSAJE ... " id="message"></textarea>
+                    <div class="clear"></div>
+                        <div class="col-md-8"> 
+                            <button type="submit" class="btn btn-primary">ENVIAR </button>
+                        </div>
                 </form>
             </section>
         </section>
@@ -89,53 +80,3 @@
     <footer class="footer"></footer>
 </body>
 </html>
-
-
-
-<form action="send.php" method="post"" name="contacto" id ="contacto" >
-
-    Nombre completo 
-    <input name="nombre" type="text" id="nombre completo"size="30" maxlength="100">
-    <br>
-    <br>
-    Correo electronico <input name="email" type="text" onBlur="MM_validateForm('email','','NisEmail');return document.MM_returnValue" size="25" maxlength="100" >
-    <br>
-    <br>
-    Población <input name="poblacion" type="text" onBlur="MM_validateForm('poblacion','','R');return document.MM_returnValue" size="20" maxlength="60">
-    <br>
-    <br>
-    Sexo
-    <br>
-    <br>
-    <input type="radio" name="GrupoOpciones1" value="1"id="GrupoOpciones1_0" />
-    Hombre
-    <br>
-    <input type="radio" name="GrupoOpciones1" value="2"id="GrupoOpciones1_1"/> Mujer
-    <br>
-    <br>
-    Aficiones
-    <br>
-    
-    <textarea cols="50" rows="5" name="comentarios"></textarea>
-    <br>
-    <br>
-    Que opina de nuestra pagina
-    <br>
-    <br>
-    <input type="radio" name="GrupoOpciones2" value="mucho" >me ha gustado mucho
-    <br>
-    <input type="radio" name="GrupoOpciones2" value="regular" >no esta mal
-    <br>
-    <input type="radio" name="GrupoOpciones2" value="mal" >no me ha gustado nada
-    <br>
-    <br>
-    Danos tu opinion
-    <br>
-    <textarea cols="50" rows="5" name="opinion"></textarea>
-    <br>
-    <br>
-    <input type="submit" value="Enviar formulario">
-    <input type="Reset" value="Borrar datos">
-    
-    </form>
-    </table>
