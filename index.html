@@ -14,7 +14,7 @@
             <li class="menu__item" onclick="location.href='#muestrasSlide'">Muestras</li>
             <li class="menu__item" onclick="location.href='#sistemaSlide'">Sistema</li>
             <li class="menu__item" onclick="location.href='#PreciosSlide'">Precios</li>
-            <li class="menu__item" onclick="location.href='#okt'">Nosotros</li>
+            <li class="menu__item" onclick="location.href='#NosotrosSlide'">Nosotros</li>
         </ul>
     </header>   
     <main class="main">
@@ -61,22 +61,36 @@
                 </div>
             </div>
         </section>
-        <section id="okt" class="main__section">
+        <section id="NosotrosSlide" class="main__section">
             <section class="nosotres"></section>
             <section class="contactanos">
-                <form action="enviar.php" method="post">
-                    <input type="text" name="name" id="name" class="name" placeholder="NOMBRE">
-                    <input type="text" name="mail" id="mail" class="email" placeholder="CORREO">
-                    <input type="text" name="phone" id="subject" class="subject" placeholder="TELÉFONO">
-                    <textarea name="message" class="message" placeholder="MENSAJE ... " id="message"></textarea>
-                    <div class="clear"></div>
-                        <div class="col-md-8"> 
-                            <button type="submit" class="btn btn-primary">ENVIAR </button>
-                        </div>
+                <form action="enviar.php" method="post" class="contactanos__form">
+                    <label for="name">
+                        <span>¿Cuál es tu nombre?</span>
+                        <input required type="text" name="name" id="name" class="contactanos__form--name" placeholder="Tu nombre">
+                    </label>
+                    <label for="mail">
+                        <span>¿Cuál es tu email?</span>
+                        <input required type="email" name="mail" id="mail" class="contactanos__form--email" placeholder="Tu Correo">
+                    </label>
+                    <label for="phone">
+                        <span>¿Cuál es tu telefono?</span>
+                        <input required type="tel" type="" name="phone" id="subject" class="contactanos__form--phone" placeholder="Tu telefono">
+                    </label>
+                    <label for="message">
+                        <span>¿Cuál es mensaje?</span>
+                        <textarea required name="message" class="contactanos__form--message" placeholder="¿Cuántos trabajadores desea examinar y dónde hay que ir?" id="message"></textarea>
+                    </label>
+                    <div class="contactanos__form--btns"> 
+                        <input type="reset" name="reset" id="reset">
+                        <input type="submit" name="submit" id="submit" onclick="msjEnviado()">
+                        <!-- <button type="submit" class="form__btn--submit">Enviar</button> -->
+                    </div>
                 </form>
             </section>
         </section>
     </main>
     <footer class="footer"></footer>
 </body>
+<script type="text/javascript" src="./index.js"></script>
 </html>

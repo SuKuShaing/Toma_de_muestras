@@ -16,9 +16,14 @@ $message .= "Mensaje: " . $_POST['message'] . " \r\n";
 $message .= "Enviado el: " . date('d/m/Y', time());
 
 $para = 'sebastian.sanhueza.t@usach.cl';
-$asunto = 'Mensaje de... (Escribe como quieres que se vea el remitente de tu correo)';
+$asunto = 'Contacto enviado desde la web';
 
 mail($para, $asunto, utf8_decode($message), $header);
+header("Location:index.html#NosotrosSlide");
 
-header("Location:index.html");
+echo "¡El formulario se ha enviado con éxito!";
+
+echo "<script language='javascript'>
+    alert('hola');
+    </script>";
 ?>
