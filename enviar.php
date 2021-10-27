@@ -20,10 +20,4 @@ $asunto = 'Contacto enviado desde la web';
 
 mail($para, $asunto, utf8_decode($message), $header);
 header("Location:index.html#NosotrosSlide");
-
-echo "¡El formulario se ha enviado con éxito!";
-
-echo "<script language='javascript'>
-    alert('hola');
-    </script>";
 ?>
