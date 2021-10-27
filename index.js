@@ -1,5 +1,7 @@
 //hacer que al deslizar te diga donde ésta, marcando en el menu
-//Falta agregar a un Capchat
+//Falta agregar a un Capchat al formulario
+
+
 // alert("conectado");
 
 function msjEnviado() {
