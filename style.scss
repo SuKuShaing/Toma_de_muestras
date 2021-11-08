@@ -181,7 +181,7 @@ body {
     }
 }
 
-////////////////// 4° Slide Precios ///////////////////
+////////////////// 5° Slide Contactenos ///////////////////
 
 #NosotrosSlide {
     display: flex;
@@ -214,7 +214,28 @@ body {
             // width: 280px;
         }
     }
+    .contactanos__form--btns {
+        display: flex;
+        justify-content: space-between;
+        margin: 10px;
 
+        input {
+            height: 25px;
+            padding: 4px;
+            font-weight: bold;
+            // margin: 0 5px;
+        }
+    }
+
+    .msjEnviado {
+        margin: 10px 0;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: $Color-Principal;
+    }
 }
 
 ////////////////// Footer ///////////////////
@@ -222,6 +243,28 @@ body {
 .footer {
     outline: 1px solid magenta;
     min-height: 25vh;
+    display: flex;
+
+    &__logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50vw;
+    }
+    
+    &__textos {
+        width: 50vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+
+
+        li {
+            list-style: none;
+            margin: 5px 0;
+        }
+    }
 }
 
 
