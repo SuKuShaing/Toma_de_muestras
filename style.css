@@ -105,6 +105,13 @@ body {
   font-size: 1.4rem;
 }
 
+.main #homeSlide {
+  background-image: url("./assets/img/protective-suit-gb90464281_1280.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
 .main__section--cards {
   padding: 40px 20px;
   display: -webkit-box;
@@ -126,22 +133,72 @@ body {
   border-radius: 20px;
   -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
           box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.main__section--cards .imagen_nuestra {
-  overflow: hidden;
+.main__section--cards .card p {
+  text-align: center;
+}
+
+.main__section--cards .iuno {
+  background-image: url("./assets/img/covid-g2d2b3b8d9_1280.jpg");
+}
+
+.main__section--cards .idos {
   background-image: url("./assets/img/muestras.jpg");
+}
+
+.main__section--cards .imagen {
+  overflow: hidden;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 
 #sistemaSlide {
-  padding: 30px 20px;
+  padding: 30px 30px;
+  background-image: url("./assets/img/doctor-reaches-towards-shelf.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#sistemaSlide .CuadroDeTexto {
+  padding: 30px;
+  background-color: rgba(255, 255, 255, 0.75);
+  border-radius: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#sistemaSlide h2 {
+  font-size: 2rem;
+  margin: 10px;
+  text-align: center;
 }
 
 #sistemaSlide p {
   text-align: center;
+  font-size: 1.6rem;
 }
 
 .main__section--carrousel {
@@ -186,6 +243,7 @@ body {
 .main__section--carrousel .tarjetaValor .precio {
   font-size: 2.5rem;
   font-weight: bold;
+  text-align: center;
 }
 
 .main__section--carrousel .tarjetaValor button {
@@ -205,9 +263,43 @@ body {
           flex-direction: column;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  padding: 30px;
+  background-image: url("./assets/img/fusion-medical-animation-rnr8D3FNUNY-unsplash.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
-.contactanos {
+#NosotrosSlide .CuadroDeTexto {
+  padding: 30px;
+  background-color: rgba(255, 255, 255, 0.75);
+  border-radius: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#NosotrosSlide .CuadroDeTexto h2 {
+  font-size: 2rem;
+  margin: 10px;
+}
+
+#NosotrosSlide .CuadroDeTexto p {
+  text-align: center;
+  font-size: 1.6rem;
+}
+
+#NosotrosSlide .contactanos {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -215,9 +307,13 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  background-color: rgba(255, 255, 255, 0.75);
+  border-radius: 20px;
+  margin: 10px;
+  padding: 10px;
 }
 
-.contactanos__form {
+#NosotrosSlide .contactanos__form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -228,7 +324,7 @@ body {
   width: 90%;
 }
 
-.contactanos label {
+#NosotrosSlide .contactanos label {
   margin: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -242,7 +338,7 @@ body {
           justify-content: space-between;
 }
 
-.contactanos .contactanos__form--btns {
+#NosotrosSlide .contactanos .contactanos__form--btns {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -252,13 +348,13 @@ body {
   margin: 10px;
 }
 
-.contactanos .contactanos__form--btns input {
+#NosotrosSlide .contactanos .contactanos__form--btns input {
   height: 25px;
   padding: 4px;
   font-weight: bold;
 }
 
-.contactanos .msjEnviado {
+#NosotrosSlide .contactanos .msjEnviado {
   margin: 10px 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -293,6 +389,11 @@ body {
   width: 50vw;
 }
 
+.footer__logo img {
+  width: 70%;
+  max-width: 250px;
+}
+
 .footer__textos {
   width: 50vw;
   display: -webkit-box;
@@ -308,7 +409,11 @@ body {
 
 .footer__textos li {
   list-style: none;
-  margin: 5px 0;
+  margin: 10px 0;
+}
+
+.footer__textos li a {
+  text-decoration: none;
 }
 
 @media screen and (min-width: 500px) {

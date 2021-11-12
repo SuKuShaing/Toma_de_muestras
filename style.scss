@@ -98,6 +98,13 @@ body {
         padding: 30px 15px 0 15px; //para que quede espacio para le menu
         font-size: 1.4rem;
     }
+
+    #homeSlide {
+        background-image: url('./assets/img/protective-suit-gb90464281_1280.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
 }
 
 ////////////////// 2da Slide Muestras ///////////////////
@@ -116,11 +123,24 @@ body {
         height: 250px;
         border-radius: 20px;
         box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        p {
+            text-align: center;    
+        }
     }
 
-    .imagen_nuestra {
-        overflow: hidden;
+    .iuno {
+        background-image: url("./assets/img/covid-g2d2b3b8d9_1280.jpg");
+    }
+
+    .idos {
         background-image: url("./assets/img/muestras.jpg");
+    }
+
+    .imagen {
+        overflow: hidden;
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
@@ -130,10 +150,33 @@ body {
 ////////////////// 3ra Slide Sistema ///////////////////
 
 #sistemaSlide {
-    padding: 30px 20px;
+    padding: 30px 30px;
+
+    background-image: url('./assets/img/doctor-reaches-towards-shelf.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    .CuadroDeTexto{
+        padding: 30px;
+        background-color: rgba($color: #ffffff, $alpha: 0.75);
+        border-radius: 20px;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    h2 {
+        font-size: 2rem;
+        margin: 10px;
+        text-align: center;
+    }
 
     p {
         text-align: center;
+        font-size: 1.6rem;
     }
 }
 
@@ -164,12 +207,12 @@ body {
         flex-direction: column;
         justify-content: space-between;
         align-items: center;
-
         font-size: 1.6rem;
 
         .precio {
             font-size: 2.5rem;
             font-weight: bold;
+            text-align: center;
         }
 
         button {
@@ -187,57 +230,88 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-}
+    padding: 30px;
 
-.contactanos {
-    width: 100%;
-    display: flex;
-    justify-content: center;
+    background-image: url('./assets/img/fusion-medical-animation-rnr8D3FNUNY-unsplash.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 
-    &__form {
+    .CuadroDeTexto{
+        padding: 30px;
+        background-color: rgba($color: #ffffff, $alpha: 0.75);
+        border-radius: 20px;
+
         display: flex;
         flex-direction: column;
-        width: 90%;
-    }
+        justify-content: center;
+        align-items: center;
 
-    label {
-        margin: 10px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-
-        // span {
-        //     // width: 100px;
-        // }
-
-        // input {
-        //     // width: 280px;
-        // }
-    }
-    .contactanos__form--btns {
-        display: flex;
-        justify-content: space-between;
-        margin: 10px;
-
-        input {
-            height: 25px;
-            padding: 4px;
-            font-weight: bold;
-            // margin: 0 5px;
+        h2 {
+            font-size: 2rem;
+            margin: 10px;
+        }
+    
+        p {
+            text-align: center;
+            font-size: 1.6rem;
         }
     }
 
-    .msjEnviado {
-        margin: 10px 0;
+    .contactanos {
+        width: 100%;
         display: flex;
         justify-content: center;
-        text-align: center;
-        font-size: 1.5rem;
-        font-weight: bold;
-        color: $Color-Principal;
+        background-color: rgba($color: #ffffff, $alpha: 0.75);
+        border-radius: 20px;
+        margin: 10px;
+        padding: 10px;
+    
+        &__form {
+            display: flex;
+            flex-direction: column;
+            width: 90%;
+        }
+    
+        label {
+            margin: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+    
+            // span {
+            //     // width: 100px;
+            // }
+    
+            // input {
+            //     // width: 280px;
+            // }
+        }
+        .contactanos__form--btns {
+            display: flex;
+            justify-content: space-between;
+            margin: 10px;
+    
+            input {
+                height: 25px;
+                padding: 4px;
+                font-weight: bold;
+                // margin: 0 5px;
+            }
+        }
+    
+        .msjEnviado {
+            margin: 10px 0;
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: $Color-Principal;
+        }
     }
+    
 }
-
 ////////////////// Footer ///////////////////
 
 .footer {
@@ -250,6 +324,11 @@ body {
         justify-content: center;
         align-items: center;
         width: 50vw;
+
+        img {
+            width: 70%;
+            max-width: 250px;
+        }
     }
     
     &__textos {
@@ -258,11 +337,13 @@ body {
         justify-content: center;
         align-items: center;
 
-
-
         li {
             list-style: none;
-            margin: 5px 0;
+            margin: 10px 0;
+
+            a {
+                text-decoration: none;
+            }
         }
     }
 }
