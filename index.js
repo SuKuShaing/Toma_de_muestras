@@ -11,3 +11,4 @@ function msjEnviado() {
     msjEnviado.innerText = "Su mensaje ha sido enviado";
 };
 
+//Quede en ajustar el CSS de slide nosotros
