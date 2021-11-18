@@ -5,7 +5,7 @@
 // alert("conectado");
 
 function msjEnviado() {
-    alert("enviado bb");
+    // alert("enviado bb");
 
     const msjEnviado = document.getElementById("msjEnviado__id");
     msjEnviado.innerText = "Su mensaje ha sido enviado";

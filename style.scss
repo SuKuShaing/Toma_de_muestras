@@ -249,7 +249,7 @@ body {
     background-repeat: no-repeat;
 
     .CuadroDeTexto{
-        padding: 30px;
+        padding: 20px;
         background-color: rgba($color: #ffffff, $alpha: 0.75);
         border-radius: 20px;
 
@@ -281,7 +281,7 @@ body {
         &__form {
             display: flex;
             flex-direction: column;
-            width: 90%;
+            width: 95%;
         }
     
         label {
