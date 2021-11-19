@@ -47,7 +47,7 @@ body {
 
 .header{
     // position:fixed;
-    //Esto es para que el menu se desplace a lo largo de la pagina
+    //Esto es para que el menu se desplace a lo largo del contenedor que lo tiene (en este caso de la pagina)
     position: sticky;
     top: 0;
     // left: 0;
@@ -59,7 +59,7 @@ body {
 
     &__item {
         flex: 1;
-        outline: 1px solid gold;
+        // outline: 1px solid gold;
         list-style: none;
         font-size: 1.4rem;
         line-height: 3rem;
@@ -90,22 +90,23 @@ body {
 ////////////////// 1er Slide Home ///////////////////
 .main {
     &__section {
-        outline: 1px solid cyan;
+        // outline: 1px solid cyan;
         min-height: 90vh;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         padding: 30px 15px 0 15px; //para que quede espacio para le menu
-        font-size: 1.4rem;
+        font-size: 1.4rem;        
     }
-
+    
     #homeSlide {
         background-image: url('./assets/img/protective-suit-gb90464281_1280.jpg');
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
     }
+
 }
 
 ////////////////// 2da Slide Muestras ///////////////////
@@ -227,10 +228,11 @@ body {
         }
 
         button {
-            padding: 10px;
-            border-radius: 5px;
+            padding: 5px 10px;
+            font-weight: bold;
             font-size: 2rem;
-            font-weight: bold;    
+            border-radius: 5px;
+            border: 1px solid $Color-Principal;
         }
     }
 }
@@ -318,9 +320,11 @@ body {
             margin: 10px;
     
             input {
-                height: 25px;
-                padding: 4px;
+                padding: 5px 10px;
                 font-weight: bold;
+                font-size: 1.7rem;
+                border-radius: 5px;
+                border: 1px solid $Color-Principal;
                 // margin: 0 5px;
             }
         }
@@ -341,7 +345,7 @@ body {
 ////////////////// Footer ///////////////////
 
 .footer {
-    outline: 1px solid magenta;
+    // outline: 1px solid magenta;
     min-height: 25vh;
     display: flex;
 
