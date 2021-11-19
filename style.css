@@ -346,6 +346,28 @@ body {
           justify-content: space-between;
 }
 
+#NosotrosSlide .contactanos label span {
+  font-size: 1.6rem;
+  margin: 5px 0;
+}
+
+#NosotrosSlide .contactanos label input, #NosotrosSlide .contactanos label textarea {
+  font-size: 1.6rem;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  border-bottom: 2px solid #007E96;
+  caret-color: #001e15;
+}
+
+#NosotrosSlide .contactanos label textarea {
+  min-height: 100px;
+}
+
+#NosotrosSlide .contactanos label input:focus, #NosotrosSlide .contactanos label textarea:focus {
+  outline: none;
+}
+
 #NosotrosSlide .contactanos .contactanos__form--btns {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -363,6 +385,7 @@ body {
 }
 
 #NosotrosSlide .contactanos .msjEnviado {
+  display: none;
   margin: 10px 0;
   display: -webkit-box;
   display: -ms-flexbox;

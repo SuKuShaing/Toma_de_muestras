@@ -19,9 +19,9 @@ $para = 'sebastian.sanhueza.t@usach.cl';
 $asunto = 'Contacto enviado desde la web';
 
 mail($para, $asunto, utf8_decode($message), $header);
-// echo "<script>alert("enviado PHP");</script>";
 echo '<div class="container"style="height: 100vh; width: 100vw; display: flex; justify-content: center; align-items: center;"> <div class="cuadro" style="padding: 2.5rem; border-radius: 30px; box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;"> <h3 style=" color: green ;">¡Mensaje enviado exitosamente!</h3> </div> </div>';
-echo "<script>setTimeout(\"location.href='index.html'\",1800)</script>";
+echo "<script>setTimeout(\"location.href='index.html#NosotrosSlide'\",1800)</script>";
+// echo "<script>alert("enviado PHP");</script>";
 // if ($email) {
 // }
 // header("Location:index.html#NosotrosSlide");
