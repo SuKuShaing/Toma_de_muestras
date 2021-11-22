@@ -12,3 +12,6 @@ function msjEnviado() {
 //que se hace en caso de encontrar alguien positivo
 //Entregamos certificados de resultados por trabajador
 //colocar todos los derechos reservados
+//colocar "...a domicilio" en algun lado de la web
+//colocar "... apto para niños" en algun lado de la web
+//colocar "... solicitar" en algun lado de la web
