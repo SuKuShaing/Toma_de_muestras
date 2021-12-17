@@ -26,6 +26,8 @@ html p {
 
 body {
   background-color: palegreen;
+  width: 100%;
+  overflow-x: hidden;
 }
 
 .menu {
@@ -36,6 +38,7 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  padding: 0px 10px;
 }
 
 .menu_logo {
@@ -47,7 +50,7 @@ body {
 }
 
 .menu_block {
-  width: 70%;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -65,8 +68,13 @@ body {
 }
 
 .menu_block_icon {
-  display: block;
   height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .menu_block_icon-img {
@@ -79,17 +87,58 @@ body {
 }
 
 .menu_block_nav {
-  width: 70%;
+  display: none;
+}
+
+.menu_block_nav-ul {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: white;
+  border: 1px solid #0B6660;
 }
 
 .menu_block_nav-ul li {
-  display: inline-block;
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  padding: 10px;
+}
+
+.menu_block_nav-ul li img {
+  height: 45px;
+  margin: 10px;
+}
+
+.menu_block_nav-ul li p {
   font-size: 2rem;
+  color: #0B6660;
 }
 
 .menu_block_nav-ul li:hover {
   cursor: pointer;
   background-color: rgba(0, 0, 0, 0.3);
+}
+
+#btn-check:checked ~ .menu_block_nav {
+  display: block;
 }
 
 .slide {
