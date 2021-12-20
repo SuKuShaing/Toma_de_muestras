@@ -28,9 +28,17 @@ body {
   background-color: palegreen;
   width: 100%;
   overflow-x: hidden;
+  position: relative;
+}
+
+#menuheader {
+  background-color: rgba(255, 255, 255, 0.5);
 }
 
 .menu {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
   height: 10vh;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -39,6 +47,7 @@ body {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding: 0px 10px;
+  z-index: 2;
 }
 
 .menu_logo {
@@ -119,7 +128,7 @@ body {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
-  padding: 10px;
+  padding: 15px;
 }
 
 .menu_block_nav-ul li img {
@@ -144,15 +153,130 @@ body {
 .slide {
   height: 100vh;
   outline: 1px solid black;
+  padding: 10px;
+  position: relative;
 }
 
-#homeSlide {
-  background-color: aquamarine;
+#home {
+  position: absolute;
+  top: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  background-image: url("./assets/img/Home-photo.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
-@media (min-width: 600px) {
+#home h1 {
+  font-size: 3.5rem;
+  color: white;
+  text-shadow: 0px 3px 6px #00000058;
+  text-align: center;
+}
+
+#home h2 {
+  font-size: 3rem;
+  color: #58C9E2;
+  text-shadow: 0px 3px 6px #00000058;
+  text-align: center;
+}
+
+#home button {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  border: none;
+  border-radius: 25px;
+  background-color: #1eb9db;
+  font-size: 1.5rem;
+  color: white;
+  padding: 7px 70px;
+  margin: 40px;
+}
+
+#home p {
+  font-size: 1.3rem;
+  text-align: center;
+}
+
+#servicios {
+  margin-top: calc(90vh);
+  background-color: #0B6660;
+}
+
+@media (min-width: 630px) {
   body {
     background-color: palegoldenrod;
+  }
+  .menu_block_icon {
+    display: none;
+  }
+  .menu_block_icon-img {
+    display: none;
+  }
+  .menu_block_nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    height: 100%;
+    width: 80%;
+  }
+  .menu_block_nav-ul {
+    height: 100%;
+    background-color: transparent;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    border: none;
+  }
+  .menu_block_nav-ul li {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 5px;
+    height: 100%;
+  }
+  .menu_block_nav-ul li img {
+    display: none;
+  }
+  .menu_block_nav-ul li p {
+    color: #0B6660;
+  }
+  .slide {
+    padding: 20px;
+  }
+  #home {
+    padding: 50px;
+  }
+  #home h1 {
+    font-size: 5.5rem;
+  }
+  #home h2 {
+    font-size: 4.5rem;
+  }
+  #home button {
+    border-radius: 0px;
+    background-color: rgba(30, 185, 219, 0.5);
+    font-size: 2.5rem;
+    padding: 8px 50px;
+    margin: 20px;
+  }
+  #home p {
+    font-size: 1.6rem;
   }
 }
 /*# sourceMappingURL=estilos.css.map */

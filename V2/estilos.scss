@@ -40,15 +40,24 @@ body {
     background-color: palegreen;
     width: 100%;
     overflow-x: hidden;
+    position: relative;
 }
 
 //////////////////// Menu ////////////////////////
 
+//Color del menu
+#menuheader {
+    background-color: rgba($color: #fff, $alpha: 0.5);
+}
+
 .menu {
+    position: sticky;
+    top: 0;
     height: 10vh;
     display: flex;
     justify-content: space-between;
     padding: 0px 10px;
+    z-index: 2;
 
     &_logo {
         height: 100%;
@@ -97,7 +106,7 @@ body {
                     flex-direction: column;
                     align-items: center;
                     flex-grow: 1;
-                    padding: 10px;
+                    padding: 15px;
 
                     img {
                         height: 45px;
@@ -124,21 +133,153 @@ body {
     display: block;
 }
 
+//////////////////// Main ////////////////////////
+
 .slide {
     height: 100vh;
     outline: 1px solid black;
+    padding: 10px;
+    // z-index: 1;
+    position:relative;
+    // top: 0;
 }
 
-#homeSlide {
-    background-color: aquamarine;
+#home {
+    position:absolute;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+    background-image: url('./assets/img/Home-photo.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    h1 {
+        font-size: 3.5rem;
+        color: white;
+        text-shadow: 0px 3px 6px #00000058;
+        text-align: center;
+    }
+    
+    h2 {
+        font-size: 3rem;
+        color: #58C9E2;
+        text-shadow: 0px 3px 6px #00000058;
+        text-align: center;
+    }
+    
+    button {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        border: none;
+        border-radius: 25px;
+        background-color: rgba($color: #1EB9DB, $alpha: 1);
+        font-size: 1.5rem;
+        color: white;
+        padding: 7px 70px;
+        margin: 40px;
+    }
+
+    p {
+        font-size: 1.3rem;
+        text-align: center;
+    }
+}
+
+#servicios {
+    margin-top: calc(90vh);
+    background-color: #0B6660;
 }
 
 ///////////////////////////////////////////////////
 ///////////////// Media Query /////////////////////
 ///////////////////////////////////////////////////
 
-@media (min-width: 600px) {
+@media (min-width: 630px) {
     body {
         background-color: palegoldenrod;
+    }
+
+    //Esto ve el color de fondo del menu
+    // #menuheader {
+    //     background-color: rgba($color: #fff, $alpha: 0.5);
+    // }
+    
+    .menu {        
+        &_block {
+            &_icon {
+                display: none;
+                &-img {
+                    display: none;
+                }
+            }
+        
+            &_nav {
+                display: flex;
+                justify-content: center;
+                height: 100%;
+                width: 80%;
+                &-ul{
+                    height: 100%;
+                    background-color: transparent;
+                    align-items: center;
+                    border: none;
+                    
+                    li {
+                        justify-content: center;
+                        padding: 5px;
+                        height: 100%;
+    
+                        img {
+                            display: none;
+                        }
+                        
+                        //Esto ve las letras del Menu
+                        p{
+                            // font-size: 2rem;
+                            color: $Color-verde-claro;
+                        }
+                    }
+                    
+                    //Esto controla el hover del menu
+                    // li:hover {
+                    //     cursor: pointer;
+                    //     background-color: rgba($color: #000000, $alpha: 0.3);            
+                    // }
+                }
+            }
+        }
+    }
+    
+    .slide {
+        padding: 20px;
+    }
+
+    #home {
+        padding: 50px;
+
+        h1 {
+            font-size: 5.5rem;
+        }
+        
+        h2 {
+            font-size: 4.5rem;
+        }
+        
+        button {
+            border-radius: 0px;
+            background-color: rgba($color: #1EB9DB, $alpha: 0.5);
+            font-size: 2.5rem;
+            padding: 8px 50px;
+            margin: 20px;
+        }
+    
+        p {
+            font-size: 1.6rem;
+        }
     }
 }
