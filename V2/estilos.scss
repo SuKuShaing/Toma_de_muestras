@@ -71,7 +71,7 @@ body {
     justify-content: space-between;
     padding: 0px 10px;
     z-index: 2;
-    backdrop-filter: blur(3px); //para difuminar el fondo
+    backdrop-filter: blur(4px); //para difuminar el fondo
 
     &_logo {
         height: 100%;
@@ -266,13 +266,13 @@ body {
     }    
 }
 
-#precio {
+#sistema {
     background-color: #0B6660;
 }
 
-#seguridad {
-    // background-color: #0B6660;
-}
+// #precio {
+//     // background-color: #0B6660;
+// }
 
 #contacto {
     background-color: #0B6660;

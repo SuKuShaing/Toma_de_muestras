@@ -50,8 +50,8 @@ body {
           justify-content: space-between;
   padding: 0px 10px;
   z-index: 2;
-  -webkit-backdrop-filter: blur(3px);
-          backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(4px);
+          backdrop-filter: blur(4px);
 }
 
 .menu_logo {
@@ -286,7 +286,7 @@ body {
   margin: 20px;
 }
 
-#precio {
+#sistema {
   background-color: #0B6660;
 }
 
