@@ -341,7 +341,70 @@ body {
 }
 
 #sistema {
-  background-color: #0B6660;
+  position: relative;
+}
+
+#sistema .igDeFondo {
+  position: absolute;
+  height: 70vh;
+  width: 100vw;
+  top: 0%;
+  background-image: url("./assets/img/meeting.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-transform: translate(-10px);
+          transform: translate(-10px);
+  -webkit-clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 91%);
+          clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 91%);
+}
+
+#sistema .textos2 {
+  position: absolute;
+  padding-top: 10vh;
+  padding-left: 20px;
+  padding-right: 20px;
+  height: 90vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#sistema .textos2 .superior {
+  color: white;
+}
+
+#sistema .textos2 .superior h2 {
+  margin-bottom: 10px;
+  font-size: 2.6rem;
+}
+
+#sistema .textos2 .superior p {
+  font-size: 1.7rem;
+}
+
+#sistema .textos2 .inferior h3 {
+  font-size: 2.6rem;
+  color: #0B6660;
+  margin-bottom: 10px;
+}
+
+#sistema .textos2 .inferior li {
+  font-size: 1.8rem;
+  list-style: none;
+  color: #767676;
+}
+
+#sistema .textos2 .inferior li span {
+  font-weight: bold;
+  color: #0B6660;
 }
 
 #contacto {
@@ -474,6 +537,26 @@ body {
     background-image: linear-gradient(230deg, white 0%, rgba(255, 255, 255, 0.9) 20%, rgba(255, 255, 255, 0) 100%), url("./assets/img/empleados-temperatura.jpeg");
     -webkit-transform: translate(-20px);
             transform: translate(-20px);
+  }
+  #sistema .igDeFondo {
+    background-image: -webkit-gradient(linear, right top, left top, from(rgba(255, 255, 255, 0.9)), color-stop(10%, rgba(255, 255, 255, 0.6)), to(rgba(255, 255, 255, 0))), url("./assets/img/meeting.jpeg");
+    background-image: linear-gradient(270deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.6) 10%, rgba(255, 255, 255, 0) 100%), url("./assets/img/meeting.jpeg");
+    -webkit-transform: translate(-20px);
+            transform: translate(-20px);
+  }
+  #sistema .textos2 .superior h2 {
+    font-size: 6rem;
+    text-shadow: 0px 3px 6px #00000058;
+  }
+  #sistema .textos2 .superior p {
+    font-size: 2.4rem;
+    text-shadow: 0px 3px 6px #00000058;
+  }
+  #sistema .textos2 .inferior h3 {
+    font-size: 6rem;
+  }
+  #sistema .textos2 .inferior li {
+    font-size: 2.4rem;
   }
 }
 /*# sourceMappingURL=estilos.css.map */

@@ -8,6 +8,7 @@ $Color-de-fondo: white;
 $Color-verde-claro: #0B6660;
 $Color-Celeste-logo: #58C9E2;
 $Color-Celeste-fuerte: #1EB9DB;
+$Color-gris-claro: #767676;
 
 
 
@@ -155,6 +156,7 @@ body {
     // top: 0;
 }
 
+///////////////////////// Home /////////////////////////////
 #home {
     position:absolute;
     top: 0;
@@ -201,6 +203,7 @@ body {
     }
 }
 
+///////////////////////// Servicios /////////////////////////////
 #servicios {
     margin-top: calc(90vh);
     display: flex;
@@ -263,6 +266,7 @@ body {
     }    
 }
 
+///////////////////////// ServiciosDos /////////////////////////////
 #serviciosDos {
     position: relative;
     width: 100%;
@@ -279,7 +283,7 @@ body {
             font-size: 1.5rem;
             text-align: right;
             font-style: italic;
-            color: #767676;
+            color: $Color-gris-claro;
             span {
                 color: $Color-verde-claro;
             }
@@ -316,17 +320,81 @@ body {
     }
 }
 
+///////////////////////// Sistemas /////////////////////////////
 #sistema {
-    background-color: #0B6660;
+    position: relative;
+
+    .igDeFondo {
+        position: absolute;
+        height: 70vh;
+        width: 100vw;
+        top: 0%;
+
+        background-image: url('./assets/img/meeting.jpeg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        transform: translate(-10px);
+        clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 91%);
+    }
+
+    .textos2 {
+        position: absolute;
+        padding-top: 10vh;
+        padding-left: 20px;
+        padding-right: 20px;
+        height: 90vh;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        .superior {
+            color: $Color-de-fondo;
+            
+            h2 {
+                margin-bottom: 10px;
+                font-size: 2.6rem;
+            }
+
+            p {
+                font-size: 1.7rem;
+            }
+        }
+
+        .inferior {
+            h3{
+                font-size: 2.6rem;
+                color: $Color-verde-claro;
+                margin-bottom: 10px;
+            }
+
+            li {
+                font-size: 1.8rem;
+                list-style: none;
+                color: $Color-gris-claro;
+
+                span {
+                    font-weight: bold;
+                    color: $Color-verde-claro;
+                }
+            }
+        }
+    }
 }
 
-// #precio {
-//     // background-color: #0B6660;
-// }
+///////////////////////// Precio /////////////////////////////
+#precio {
+    // background-color: #0B6660;
+}
 
+///////////////////////// Contacto /////////////////////////////
 #contacto {
     background-color: #0B6660;
 }
+
+///////////////////////// Footer /////////////////////////////
+
 
 
 
@@ -430,7 +498,7 @@ body {
     
             p {
                 font-size: 2.3rem;
-                color: #767676;
+                color: $Color-gris-claro;
                 width: 40vw;
             }
     
@@ -468,6 +536,37 @@ body {
         .imgFondo {
             background-image: linear-gradient(230deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0.9) 20%, rgba(255,255,255,0) 100%), url('./assets/img/empleados-temperatura.jpeg');
             transform: translate(-20px);
+        }
+    }
+
+    #sistema {
+        .igDeFondo {
+            background-image: linear-gradient(270deg, rgba(255,255,255,0.9) 0%, rgba(255,255,255,0.6) 10%, rgba(255,255,255,0) 100%), url('./assets/img/meeting.jpeg');
+            transform: translate(-20px);
+        }
+    
+        .textos2 {
+            .superior {
+                h2 {
+                    font-size: 6rem;
+                    text-shadow: 0px 3px 6px #00000058;
+                }
+                
+                p {
+                    font-size: 2.4rem;
+                    text-shadow: 0px 3px 6px #00000058;
+                }
+            }
+    
+            .inferior {
+                h3{
+                    font-size: 6rem;
+                }
+    
+                li {
+                    font-size: 2.4rem;
+                }
+            }
         }
     }
 }
