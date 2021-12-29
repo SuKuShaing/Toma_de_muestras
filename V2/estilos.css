@@ -347,7 +347,7 @@ body {
 #sistema .igDeFondo {
   position: absolute;
   height: 70vh;
-  width: 100vw;
+  width: 100%;
   top: 0%;
   background-image: url("./assets/img/meeting.jpeg");
   background-size: cover;
@@ -405,6 +405,125 @@ body {
 #sistema .textos2 .inferior li span {
   font-weight: bold;
   color: #0B6660;
+}
+
+#precio {
+  position: relative;
+  height: 100vh;
+}
+
+#precio .imgfDeFondo {
+  position: absolute;
+  height: 80vh;
+  width: 100%;
+  top: 20%;
+  background-image: url("./assets/img/pagos.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-transform: translate(-10px);
+          transform: translate(-10px);
+}
+
+#precio .dentro {
+  position: absolute;
+  padding-top: 10vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 100%;
+  -webkit-transform: translate(-10px);
+          transform: translate(-10px);
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+#precio .dentro h2 {
+  margin: 10px;
+  color: #767676;
+  font-size: 3.5rem;
+  text-shadow: 0px 2px 3px #00000058;
+}
+
+#precio .dentro .cuadrosDeValores {
+  padding: 10px;
+  padding-top: 20px;
+  width: 100%;
+  height: 70vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 20px;
+  overflow-x: scroll;
+  -ms-scroll-snap-type: x proximity;
+      scroll-snap-type: x proximity;
+  /* para que se mueva en x a la mas cercana, y con el 
+            scroll-snap-align: center; en las tarjetas 
+            estas tarjetas se centraran en la web */
+}
+
+#precio .dentro .cuadrosDeValores .cuadritos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.75);
+          box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.75);
+  scroll-snap-align: center;
+  /* las tarjetas no pueden quedar a la mitad, siempre te centra una tarjeta */
+  min-width: 220px;
+  max-width: 260px;
+  min-height: 300px;
+  max-height: 350px;
+  border-radius: 10px;
+  padding: 10px;
+  background-color: #0b6660;
+}
+
+#precio .dentro .cuadrosDeValores .cuadritos h3 {
+  text-align: center;
+  font-weight: lighter;
+  font-size: 2.5rem;
+  color: white;
+}
+
+#precio .dentro .cuadrosDeValores .cuadritos h4 {
+  text-align: center;
+  font-size: 3.5rem;
+  color: white;
+  text-shadow: 0px 3px 6px #00000058;
+}
+
+#precio .dentro .cuadrosDeValores .cuadritos button {
+  min-width: 120px;
+  width: 45vw;
+  max-width: 190px;
+  height: 45px;
+  font-size: 2.5rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+  border: none;
+  border-radius: 5px;
+  background-color: #1eb9db;
+  color: white;
 }
 
 #contacto {
@@ -557,6 +676,37 @@ body {
   }
   #sistema .textos2 .inferior li {
     font-size: 2.4rem;
+  }
+  #precio .imgfDeFondo {
+    -webkit-transform: translate(-20px);
+            transform: translate(-20px);
+  }
+  #precio .dentro {
+    -webkit-transform: translate(-20px);
+            transform: translate(-20px);
+  }
+  #precio .dentro h2 {
+    font-size: 5rem;
+  }
+  #precio .dentro .cuadrosDeValores .cuadritos h3 {
+    font-size: 3rem;
+  }
+  #precio .dentro .cuadrosDeValores .cuadritos h4 {
+    font-size: 3.5rem;
+  }
+  #precio .dentro .cuadrosDeValores .cuadritos button {
+    font-size: 2.8rem;
+  }
+}
+
+@media (min-width: 1140px) {
+  #precio .dentro .cuadrosDeValores {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  #precio .dentro .cuadrosDeValores::-webkit-scrollbar {
+    display: none;
   }
 }
 /*# sourceMappingURL=estilos.css.map */

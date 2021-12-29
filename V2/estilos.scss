@@ -148,12 +148,8 @@ body {
 
 .slide {
     height: 100vh;
-    // width: 100vw;
-    // outline: 1px solid black;
     padding: 10px;
-    // z-index: 1;
     position:relative;
-    // top: 0;
 }
 
 ///////////////////////// Home /////////////////////////////
@@ -327,7 +323,7 @@ body {
     .igDeFondo {
         position: absolute;
         height: 70vh;
-        width: 100vw;
+        width: 100%;
         top: 0%;
 
         background-image: url('./assets/img/meeting.jpeg');
@@ -385,7 +381,109 @@ body {
 
 ///////////////////////// Precio /////////////////////////////
 #precio {
-    // background-color: #0B6660;
+    position: relative;
+    height: 100vh;
+    
+    .imgfDeFondo {
+        position: absolute;
+        height: 80vh;
+        width: 100%;
+        top: 20%;
+
+        background-image: url('./assets/img/pagos.jpeg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        transform: translate(-10px);
+    }
+    
+    .dentro {
+        position: absolute;
+        
+        padding-top: 10vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 100%;
+        transform: translate(-10px);
+        padding-left: 10px;
+        padding-right: 10px;
+        
+        h2 {
+            margin: 10px;
+            color: $Color-gris-claro;
+            font-size: 3.5rem;
+            text-shadow: 0px 2px 3px #00000058;
+        }
+        
+        .cuadrosDeValores {
+            padding: 10px;
+            padding-top: 20px;
+            width: 100%;
+            height: 70vh;
+
+            display: flex;
+            // flex-wrap: wrap;
+            // justify-content: center;
+            align-items: center;
+            gap: 20px;
+
+            overflow-x: scroll;
+            scroll-snap-type: x proximity;
+            /* para que se mueva en x a la mas cercana, y con el 
+            scroll-snap-align: center; en las tarjetas 
+            estas tarjetas se centraran en la web */
+ 
+            .cuadritos {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-between;
+                box-shadow: 0px 2px 10px 0px rgba(0,0,0,0.75);
+                scroll-snap-align: center;
+                /* las tarjetas no pueden quedar a la mitad, siempre te centra una tarjeta */
+
+                
+                min-width: 220px;
+                // width: 70%;
+                max-width: 260px;
+                min-height: 300px;
+                max-height: 350px;
+                border-radius: 10px;
+                padding: 10px;
+                background-color: rgba($color: $Color-verde-claro, $alpha: 1);
+
+                h3 {
+                    text-align: center;
+                    font-weight: lighter;
+                    font-size: 2.5rem;
+                    color: $Color-de-fondo;    
+                }
+                h4 {
+                    text-align: center;
+                    font-size: 3.5rem;
+                    color: $Color-de-fondo;
+                    text-shadow: 0px 3px 6px #00000058;
+                }
+                button {
+                    min-width: 120px;
+                    width: 45vw;
+                    max-width: 190px;
+                    height: 45px;
+                    font-size: 2.5rem;
+                    font-weight: bold;
+                    letter-spacing: 1px;
+                    border: none;
+                    border-radius: 5px;
+                    background-color: rgba($color: #1EB9DB, $alpha: 1);
+                    color: white;
+                }
+            }
+        }
+        // .cuadrosDeValores::-webkit-scrollbar {
+        //     display: none;
+        // }
+    }
 }
 
 ///////////////////////// Contacto /////////////////////////////
@@ -566,6 +664,52 @@ body {
                 li {
                     font-size: 2.4rem;
                 }
+            }
+        }
+    }
+    
+    ///////////////////////// Precio /////////////////////////////
+    #precio {
+        .imgfDeFondo {
+            transform: translate(-20px);
+        }
+        
+        .dentro {
+            transform: translate(-20px);
+            
+            h2 {
+                font-size: 5rem;
+            }
+            
+            .cuadrosDeValores {    
+                .cuadritos {
+                    h3 {
+                        font-size: 3rem;
+                    }
+                    h4 {
+                        font-size: 3.5rem;
+                    }
+                    button {
+                        font-size: 2.8rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+///////////////////////// siguiente Media Query /////////////////////////////
+
+
+@media (min-width: 1140px) {
+    #precio {
+        .dentro {
+            .cuadrosDeValores {
+                justify-content: center;
+            }
+            .cuadrosDeValores::-webkit-scrollbar {
+                display: none;
             }
         }
     }
