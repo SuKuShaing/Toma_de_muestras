@@ -201,65 +201,78 @@ body {
 
 ///////////////////////// Servicios /////////////////////////////
 #servicios {
+    position: relative;
     margin-top: calc(90vh);
-    display: flex;
-    flex-direction: column;
-    justify-content:space-around;
-    padding: calc(10vh) 0px;
+    height: 100vh;
+    width: 100vw;
+    
+    .contenidosServicios {
+        display: flex;
+        flex-direction: column;
+        justify-content:space-around;
+        padding: calc(10vh) 0px;
 
-    background-image: url('./assets/img/toma-de-muestras.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    clip-path: polygon(0 6%, 100% 15%, 100% 85%, 0 93%);
-
-    h2 {
-        font-size: 3.5rem;
-        align-self: center;
-        color: $Color-verde-claro;
-        margin-bottom: 10px;
-    }
-
-    .cuadro {
-        background-color: rgba($color: rgb(0, 0, 0), $alpha: 0.15);
-        width: 90%;
-        transform: translate(-10px);
-        padding: 20px;
-
-        i {
-            margin-bottom: 20px;
-            img {
-                height: 79px;
-                width: 79px;
+        h2 {
+            font-size: 3.5rem;
+            align-self: center;
+            color: $Color-verde-claro;
+            margin-bottom: 10px;
+        }
+    
+        .cuadro {
+            background-color: rgba($color: rgb(0, 0, 0), $alpha: 0.15);
+            width: 90%;
+            transform: translate(-10px);
+            padding: 20px;
+    
+            i {
+                margin-bottom: 20px;
+                img {
+                    height: 79px;
+                    width: 79px;
+                }
+            }
+            
+            h3 {
+                font-size: 2.5rem;
+                color: white;
+                text-shadow: 0px 3px 6px #00000058;
+                margin: 10px 0px 30px;
+            }
+    
+            p {
+                font-size: 1.8rem;
+                color: $Color-de-fondo;
             }
         }
-        
-        h3 {
-            font-size: 2.5rem;
+    
+        button {
+            max-width: 50%;
+            align-self: center;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            border: none;
+            border-radius: 25px;
+            background-color: rgba($color: #1EB9DB, $alpha: 1);
+            font-size: 1.5rem;
             color: white;
-            text-shadow: 0px 3px 6px #00000058;
-            margin: 10px 0px 30px;
+            padding: 7px;
+            margin: 20px;
         }
-
-        p {
-            font-size: 1.8rem;
-            color: $Color-de-fondo;
-        }
-
     }
 
-    button {
-        max-width: 50%;
-        align-self: center;
-        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-        border: none;
-        border-radius: 25px;
-        background-color: rgba($color: #1EB9DB, $alpha: 1);
-        font-size: 1.5rem;
-        color: white;
-        padding: 7px;
-        margin: 20px;
-    }    
+    .imgFondoServicios {
+        position: absolute;
+        top: 0;
+        height: 100vh;
+        width: 100%;
+        background-image: url('./assets/img/toma-de-muestras.png');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        clip-path: polygon(0 6%, 100% 15%, 100% 85%, 0 95%);
+        transform: translate(-10px);
+        z-index: -1;
+    }
 }
 
 ///////////////////////// ServiciosDos /////////////////////////////
@@ -565,48 +578,48 @@ body {
         }
     }
 
-    #servicios {
-        padding: calc(10vh) calc(10vw);
-        background-image: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 30%, rgba(255,255,255,0) 100%), url('./assets/img/toma-de-muestras.png');
-        background-size: 100%;
-        clip-path: polygon(0 10%, 100% 10%, 100% 85%, 0 85%);
-    
-        h2 {
-            font-size: 6rem;
-            align-self:auto;
-        }
-    
-        .cuadro {
-            background-color: rgba($color: rgb(0, 0, 0), $alpha: 0);
-            width: 100%;
-            transform: none;
-            padding: 0px 0px 100px 0px;
-    
-            i {
+    ///////////////////////// Servicios /////////////////////////////
+    #servicios {        
+        .contenidosServicios {
+            display: block;
+            width: 80%;
+            h2 {
+                font-size: 5rem;
+            }
+        
+            .cuadro {
+                background-color: rgba($color: rgb(0, 0, 0), $alpha: 0);
+                width: 80%;
+        
+                i {
+                    display: none;
+                }
+                
+                h3 {
+                    font-size: 4.5rem;
+                    color: $Color-Celeste-fuerte;
+                    text-shadow: 0px 0px 0px #00000058;
+                }
+        
+                p {
+                    font-size: 2.5rem;
+                    color: $Color-gris-claro;
+                }
+            }
+        
+            button {
                 display: none;
             }
-            
-            h3 {
-                font-size: 5rem;
-                color: $Color-Celeste-fuerte;
-                text-shadow: none;
-                margin: 0px 0px 50px;
-                width: 50vw;
-            }
-    
-            p {
-                font-size: 2.3rem;
-                color: $Color-gris-claro;
-                width: 40vw;
-            }
-    
         }
-    
-        button {
-            display: none;
-        }    
-    }
 
+        .imgFondoServicios {
+            background-image: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0.9) 20%, rgba(255,255,255,0) 100%), url('./assets/img/toma-de-muestras.png');
+            clip-path: polygon(0 20%, 100% 20%, 100% 80%, 0 80%);
+            transform: translate(-20px);
+        }
+    }
+    
+///////////////////////// ServiciosDos /////////////////////////////
     #serviciosDos {
         .textos {
             display: flex;
