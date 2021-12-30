@@ -501,7 +501,99 @@ body {
 
 ///////////////////////// Contacto /////////////////////////////
 #contacto {
-    background-color: #0B6660;
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    
+    .contacto_contenido {
+        // position: absolute;
+        // top: 0;
+        width: 90%;
+        margin: 0 auto;
+        margin-top: 11vh;
+        background-color: rgba($color: $Color-verde-claro, $alpha: 0.8);
+        // transform: translate(-10px);
+        
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        h2 {
+            color: $Color-de-fondo;
+            font-size: 3rem;
+            font-weight: lighter;
+            letter-spacing: 1px;
+            margin: 15px 0 5px;
+        }
+        
+        .contactanos__form{
+            margin: auto;
+            padding: 10px;
+            width: 100%;
+            padding-top: 15px;
+    
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            label {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+            }
+
+            span {
+                display: none;
+            }
+
+            input {
+                margin: 10px;
+                width: 75vw;
+                padding: 5px;
+                border: none;
+                font-size: 1.7rem;
+            }
+            
+            textarea {
+                margin: 10px;
+                width: 75vw;
+                min-height: 150px;
+                padding: 5px;
+                border: none;
+                font-size: 1.7rem;
+            }
+
+            &--btns {
+                input[type=reset] {
+                    display: none;
+                }
+    
+                input[type=submit] {
+                    width: 50vw;
+                    padding: 8px;
+                    font-size: 2rem;
+                    background-color: $Color-Celeste-fuerte;
+                    border: 1px solid $Color-Celeste-logo;
+                    border-radius: 25px;
+                    color: $Color-de-fondo;
+                }
+            }
+
+        }
+    }
+    
+    .contacto_imgFondo {
+        position: absolute;
+        top: 0;
+        height: 100vh;
+        width: 100%;
+        background-image: url("./assets/img/oficina-distanciada.jpeg");
+        background-size: cover;     
+        background-position: center;
+        background-repeat: no-repeat;
+        transform: translate(-10px);
+        z-index: -1;
+    }
 }
 
 ///////////////////////// Footer /////////////////////////////
@@ -707,6 +799,66 @@ body {
                     }
                 }
             }
+        }
+    }
+
+    ///////////////////////// Contacto /////////////////////////////
+    #contacto {
+        .contacto_contenido {
+            max-width: 800px;
+            padding: 15px 50px;
+            align-items: flex-start;
+
+            h2 {
+                font-size: 4rem;
+                font-weight: bolder;
+                margin: 15px 15px 15px 0px;
+            }
+            
+            .contactanos__form{
+                margin: 0;
+                padding: 0px;
+                padding-top: 0px;
+
+                label {
+                    flex-direction: column;
+                }
+
+                span {
+                    display: block;
+                    margin-top: 10px;
+                    font-size: 2.5rem;
+                    color: white;
+                }
+
+                input {
+                    margin: 10px 0px;
+                    width: 100%;
+                    font-size: 2rem;
+                }
+                
+                textarea {
+                    margin: 10px 0px;
+                    width: 100%;
+                    min-height: 100px;
+                    font-size: 2rem;
+                }
+
+                &--btns {
+                    input[type=submit] {
+                        max-width: 300px;
+                        padding: 10px;
+                        font-size: 2.5rem;
+                        margin-top: 10px;
+                        border-radius: 30px;
+                    }
+                }
+
+            }
+        }
+        
+        .contacto_imgFondo {
+            transform: translate(-20px);
         }
     }
 }

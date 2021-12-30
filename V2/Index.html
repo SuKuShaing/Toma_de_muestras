@@ -118,7 +118,29 @@
         </div>
         <div id="contacto" class="slide">
             <div class="contacto_contenido">
-
+                <h2>Contáctenos</h2>
+                <form action="enviarNew.php" method="post" class="contactanos__form">
+                    <label for="name">
+                        <span>Nombre</span>
+                        <input required type="text" name="name" id="name" class="contactanos__form--name" placeholder="Nombre">
+                    </label>
+                    <label for="mail">
+                        <span>E-mail</span>
+                        <input required type="email" name="mail" id="mail" class="contactanos__form--email" placeholder="Email">
+                    </label>
+                    <label for="phone">
+                        <span>Teléfono</span>
+                        <input required type="tel" type="" name="phone" id="subject" class="contactanos__form--phone" placeholder="Teléfono">
+                    </label>
+                    <label for="message">
+                        <span>Mensaje</span>
+                        <textarea required name="message" class="contactanos__form--message" placeholder="Nombre de la empresa, Dirección de su empresa y cantidad de colaboradores a examinar" id="message"></textarea>
+                    </label>
+                    <div class="contactanos__form--btns"> 
+                        <input type="reset" name="reset" id="reset">
+                        <input type="submit" name="submit" id="submit">
+                    </div>
+                </form>
             </div>
             <div class="contacto_imgFondo"></div>
         </div>
