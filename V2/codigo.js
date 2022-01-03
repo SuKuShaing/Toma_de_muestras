@@ -12,3 +12,6 @@ QUEDE EN:
 /*
 Corregir:
 */
+
+
+// scroll-bhavior-type: y mandatory
