@@ -2,16 +2,12 @@ console.log("si funcion wey");
 
 /*
 QUEDE EN:
-- Hacer el footer
-- Hacer la pestaña de infor de los test
-- Modificar los texto
+- Hacer la pestaña de información de los test
+- Enviar al Mau, Modificar los texto
 - Añadir el código para compartir en fb, para el SEO de google y el favicon
-- Añadir los rastreadores de google analitic, console 
+- Añadir los rastreadores de google analitycs, search console 
 */
 
 /*
 Corregir:
 */
-
-
-// scroll-bhavior-type: y mandatory

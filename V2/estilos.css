@@ -307,6 +307,198 @@ body {
   z-index: -1;
 }
 
+#especificidad {
+  position: relative;
+}
+
+#especificidad .imgEspecificidad {
+  position: absolute;
+  top: 0;
+  height: 50vh;
+  width: 100%;
+  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(-1%, white), color-stop(30%, rgba(255, 255, 255, 0.9)), to(rgba(255, 255, 255, 0))), url("./assets/img/examen-microscopio.jpeg");
+  background-image: linear-gradient(0deg, white -1%, rgba(255, 255, 255, 0.9) 30%, rgba(255, 255, 255, 0) 100%), url("./assets/img/examen-microscopio.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-transform: translate(-10px);
+          transform: translate(-10px);
+  z-index: -1;
+}
+
+#especificidad .contendioEspecificidad {
+  position: absolute;
+  bottom: 3%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+}
+
+#especificidad .contendioEspecificidad h2 {
+  display: none;
+}
+
+#especificidad .contendioEspecificidad h3 {
+  display: none;
+}
+
+#especificidad .contendioEspecificidad .texto1 {
+  display: none;
+}
+
+#especificidad .contendioEspecificidad .texto2 {
+  color: #1EB9DB;
+  font-weight: bold;
+  font-size: 2.3rem;
+  text-shadow: 0px 3px 6px #00000058;
+}
+
+#especificidad .contendioEspecificidad .tabla1 {
+  display: none;
+}
+
+#especificidad .contendioEspecificidad .tabla2 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  -ms-grid-rows: (1fr)[11];
+      grid-template-rows: repeat(11, 1fr);
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 10px 0;
+  padding: 0 20px;
+  font-size: 2rem;
+}
+
+#especificidad .contendioEspecificidad .tabla2 .t-titulos {
+  font-size: 2rem;
+  color: #0B6660;
+  font-weight: bolder;
+}
+
+#especificidad .contendioEspecificidad .tabla2 .t-Subtitulos {
+  background-color: #0B6660;
+  color: white;
+  font-size: 1,8rem;
+  font-weight: bold;
+  text-align: left;
+  padding: 1px 10px;
+}
+
+#especificidad .contendioEspecificidad .tabla2 .bor-right {
+  border-right: 1px solid #767676;
+}
+
+#especificidad .contendioEspecificidad .tabla2 .t1 {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1 / 3;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  grid-row: 1 / 3;
+}
+
+#especificidad .contendioEspecificidad .tabla2 .t2 {
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
+  grid-column: 3 / 4;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  grid-row: 1 / 3;
+}
+
+#especificidad .contendioEspecificidad .tabla2 .t3i {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-column: 1 / 4;
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 1;
+  grid-row: 3 / 4;
+}
+
+#especificidad .contendioEspecificidad .tabla2 .t4 {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1 / 3;
+  -ms-grid-row: 4;
+  -ms-grid-row-span: 2;
+  grid-row: 4 / 6;
+}
+
+#especificidad .contendioEspecificidad .tabla2 .t5 {
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
+  grid-column: 3 / 4;
+  -ms-grid-row: 4;
+  -ms-grid-row-span: 2;
+  grid-row: 4 / 6;
+}
+
+#especificidad .contendioEspecificidad .tabla2 .t6i {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-column: 1 / 4;
+  -ms-grid-row: 6;
+  -ms-grid-row-span: 1;
+  grid-row: 6 / 7;
+}
+
+#especificidad .contendioEspecificidad .tabla2 .t7 {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1 / 3;
+  -ms-grid-row: 7;
+  -ms-grid-row-span: 2;
+  grid-row: 7 / 9;
+}
+
+#especificidad .contendioEspecificidad .tabla2 .t8 {
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
+  grid-column: 3 / 4;
+  -ms-grid-row: 7;
+  -ms-grid-row-span: 2;
+  grid-row: 7 / 9;
+}
+
+#especificidad .contendioEspecificidad .tabla2 .t9i {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-column: 1 / 4;
+  -ms-grid-row: 9;
+  -ms-grid-row-span: 1;
+  grid-row: 9 / 10;
+}
+
+#especificidad .contendioEspecificidad .tabla2 .t10 {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1 / 3;
+  -ms-grid-row: 10;
+  -ms-grid-row-span: 2;
+  grid-row: 10 / 12;
+}
+
+#especificidad .contendioEspecificidad .tabla2 .t11 {
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
+  grid-column: 3 / 4;
+  -ms-grid-row: 10;
+  -ms-grid-row-span: 2;
+  grid-row: 10 / 12;
+}
+
+#especificidad .contendioEspecificidad .texto3 {
+  color: #767676;
+}
+
 #serviciosDos {
   position: relative;
   width: 100%;
@@ -828,6 +1020,111 @@ footer .fooContenido .fooBlockTres li {
             clip-path: polygon(0 20%, 100% 20%, 100% 80%, 0 80%);
     -webkit-transform: translate(-20px);
             transform: translate(-20px);
+  }
+  #especificidad .imgEspecificidad {
+    top: 10vh;
+    height: 90vh;
+    width: 80%;
+    background-image: -webkit-gradient(linear, right top, left top, from(white), color-stop(15%, rgba(255, 255, 255, 0.9)), to(rgba(255, 255, 255, 0))), url("./assets/img/examen-microscopio.jpeg");
+    background-image: linear-gradient(270deg, white 0%, rgba(255, 255, 255, 0.9) 15%, rgba(255, 255, 255, 0) 100%), url("./assets/img/examen-microscopio.jpeg");
+    -webkit-transform: translate(-20px);
+            transform: translate(-20px);
+  }
+  #especificidad .contendioEspecificidad {
+    top: 11vh;
+    right: 10px;
+    width: 60%;
+    text-align: right;
+  }
+  #especificidad .contendioEspecificidad h2 {
+    display: block;
+    font-size: 4rem;
+    font-weight: bold;
+    color: #0B6660;
+    margin-top: 30px;
+  }
+  #especificidad .contendioEspecificidad h3 {
+    display: block;
+    font-size: 3rem;
+    font-weight: lighter;
+    color: #1EB9DB;
+    margin-bottom: 30px;
+  }
+  #especificidad .contendioEspecificidad .texto1 {
+    display: block;
+    margin: 10px 0;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #767676;
+  }
+  #especificidad .contendioEspecificidad .texto2 {
+    display: none;
+  }
+  #especificidad .contendioEspecificidad .tabla1 {
+    margin: 20px 0;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[8];
+        grid-template-columns: repeat(8, 1fr);
+    -ms-grid-rows: (1fr)[4];
+        grid-template-rows: repeat(4, 1fr);
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #especificidad .contendioEspecificidad .tabla1 .y-titulos {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #0B6660;
+    -ms-grid-column-align: center;
+        justify-self: center;
+  }
+  #especificidad .contendioEspecificidad .tabla1 .y-contenido {
+    font-size: 2rem;
+    font-weight: lighter;
+    color: #767676;
+    -ms-grid-column-align: center;
+        justify-self: center;
+  }
+  #especificidad .contendioEspecificidad .tabla1 .colum-1 {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+    grid-column: 1 / 4;
+    -ms-grid-column-align: right;
+        justify-self: right;
+  }
+  #especificidad .contendioEspecificidad .tabla1 .colum-2 {
+    -ms-grid-column: 4;
+    -ms-grid-column-span: 3;
+    grid-column: 4 / 7;
+  }
+  #especificidad .contendioEspecificidad .tabla1 .colum-3 {
+    -ms-grid-column: 7;
+    -ms-grid-column-span: 2;
+    grid-column: 7 / 9;
+  }
+  #especificidad .contendioEspecificidad .tabla1 .row-1 {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    grid-row: 1 / 2;
+  }
+  #especificidad .contendioEspecificidad .tabla1 .row-2 {
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    grid-row: 2 / 3;
+  }
+  #especificidad .contendioEspecificidad .tabla1 .row-3 {
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 1;
+    grid-row: 3 / 4;
+  }
+  #especificidad .contendioEspecificidad .tabla1 .row-4 {
+    -ms-grid-row: 4;
+    -ms-grid-row-span: 1;
+    grid-row: 4 / 5;
+  }
+  #especificidad .contendioEspecificidad .tabla2 {
+    display: none;
   }
   #serviciosDos .textos {
     display: -webkit-box;
