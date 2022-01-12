@@ -60,10 +60,47 @@ body {
 
 .menu_logo {
   height: 100%;
+  text-decoration: none;
 }
 
 .menu_logo-img {
   height: 100%;
+}
+
+.menu_logo .deLado {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.menu_logo .deLado img {
+  height: 60%;
+  margin: 10px;
+}
+
+.menu_logo .deLado h2 {
+  font-size: 3.5rem;
+  font-weight: lighter;
+  color: #0B6660;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.menu_logo .deLado h2 span {
+  color: #1EB9DB;
 }
 
 .menu_block {
@@ -248,7 +285,7 @@ body {
 }
 
 #servicios .contenidosServicios .cuadro {
-  background-color: rgba(0, 0, 0, 0.15);
+  background-color: rgba(0, 0, 0, 0.25);
   width: 90%;
   -webkit-transform: translate(-10px);
           transform: translate(-10px);
@@ -277,18 +314,20 @@ body {
 }
 
 #servicios .contenidosServicios button {
-  max-width: 50%;
+  padding: 10px;
+  margin: 20px;
+  width: 250px;
+  max-width: 300px;
+  border-radius: 20px;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  border: none;
-  border-radius: 25px;
-  background-color: #1eb9db;
-  font-size: 1.5rem;
+  font-size: 2rem;
+  font-weight: bolder;
   color: white;
-  padding: 7px;
-  margin: 20px;
+  border: none;
+  background-color: #1eb9db;
 }
 
 #servicios .imgFondoServicios {
@@ -1156,12 +1195,16 @@ footer .fooContenido .fooBlockTres li {
     background-image: linear-gradient(230deg, white 0%, rgba(255, 255, 255, 0.9) 20%, rgba(255, 255, 255, 0) 100%), url("./assets/img/empleados-temperatura.jpeg");
     -webkit-transform: translate(-20px);
             transform: translate(-20px);
+    -webkit-clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);
+            clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);
   }
   #sistema .igDeFondo {
     background-image: -webkit-gradient(linear, right top, left top, from(rgba(255, 255, 255, 0.9)), color-stop(10%, rgba(255, 255, 255, 0.6)), to(rgba(255, 255, 255, 0))), url("./assets/img/meeting.jpeg");
     background-image: linear-gradient(270deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.6) 10%, rgba(255, 255, 255, 0) 100%), url("./assets/img/meeting.jpeg");
     -webkit-transform: translate(-20px);
             transform: translate(-20px);
+    -webkit-clip-path: polygon(0 0, 100% 0%, 100% 91%, 0 91%);
+            clip-path: polygon(0 0, 100% 0%, 100% 91%, 0 91%);
   }
   #sistema .textos2 .superior h2 {
     font-size: 6rem;
@@ -1253,6 +1296,9 @@ footer .fooContenido .fooBlockTres li {
   }
   footer .fooImagen {
     height: 100%;
+    top: 0;
+    -webkit-clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);
+            clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);
   }
   footer .fooContenido {
     padding: 10px 30px;
