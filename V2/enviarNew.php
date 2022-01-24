@@ -19,13 +19,6 @@ $para = 'sebastian.sanhueza.t@usach.cl';
 $asunto = 'Contacto enviado desde la web nueva';
 
 mail($para, $asunto, utf8_decode($message), $header);
-echo '<div class="container"style="height: 100vh; width: 100vw; display: flex; justify-content: center; align-items: center;"> <div class="cuadro" style="padding: 2.5rem; border-radius: 30px; box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;"> <h3 style=" color: green ;">¡Mensaje enviado exitosamente!</h3> </div> </div>';
-echo "<script>setTimeout(\"location.href='index.html#NosotrosSlide'\",1800)</script>";
-// echo "<script>alert("enviado PHP");</script>";
-// if ($email) {
-// }
-// header("Location:index.html#NosotrosSlide");
-// echo '<script type="text/javascript">',
-//      'alert("enviado php");',
-//      '</script>';
+echo '<div class="container"style="height: 100vh;width: 100vw;background-color: #58C9E2;display: flex;justify-content: center;align-items: center;"><div class="cuadro" style="padding: 2.5rem;border-radius: 30px;background-color: #ffffff;box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;"><h3 style="font-size: 3rem;color: green ;">¡Mensaje enviado exitosamente!</h3></div></div>';
+echo "<script>setTimeout(\"location.href='index.html#contacto'\",1800)</script>";
 ?>

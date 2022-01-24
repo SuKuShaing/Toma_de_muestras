@@ -1,8 +1,6 @@
-console.log("si funcion wey");
-
 /*
 QUEDE EN:
-- Modificar los texto
+- Modificar los texto para SEO
 - Añadir el código para compartir en fb, para el SEO de google y el favicon
 - Añadir los rastreadores de google analitycs, search console y Hotjar
 - Colocar los Rich Snippet
@@ -12,7 +10,10 @@ QUEDE EN:
 Corregir:
 */
 
-
+/* URLs
+Prueba-covid.cl
+PcrEnTuEmpresa.cl
+*/
 
 
 
