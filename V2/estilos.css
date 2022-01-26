@@ -560,6 +560,7 @@ body {
   text-align: right;
   font-style: italic;
   color: #767676;
+  text-shadow: 2px 2px 0 #ffffff, 2px -2px 0 #ffffff, -2px 2px 0 #ffffff, -2px -2px 0 #ffffff, 2px 0px 0 #ffffff, 0px 2px 0 #ffffff, -2px 0px 0 #ffffff, 0px -2px 0 #ffffff;
 }
 
 #serviciosDos .textos p span {

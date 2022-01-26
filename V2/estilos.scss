@@ -455,6 +455,10 @@ body {
             text-align: right;
             font-style: italic;
             color: $Color-gris-claro;
+            // text-shadow: 0px 3px 6px #ffffff;
+            // text-shadow: 0px 0px 7px rgb(255, 255, 255);
+            text-shadow: 2px 2px 0 #ffffff, 2px -2px 0 #ffffff, -2px 2px 0 #ffffff, -2px -2px 0 #ffffff, 2px 0px 0 #ffffff, 0px 2px 0 #ffffff, -2px 0px 0 #ffffff, 0px -2px 0 #ffffff;
+            // background-color: $Color-de-fondo;
             span {
                 color: $Color-verde-claro;
             }
