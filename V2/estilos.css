@@ -395,7 +395,7 @@ body {
   color: #1EB9DB;
   font-weight: bold;
   font-size: 2.3rem;
-  text-shadow: 0px 3px 6px #00000058;
+  text-shadow: 2px 2px 0 #ffffff, 2px -2px 0 #ffffff, -2px 2px 0 #ffffff, -2px -2px 0 #ffffff, 2px 0px 0 #ffffff, 0px 2px 0 #ffffff, -2px 0px 0 #ffffff, 0px -2px 0 #ffffff;
 }
 
 #especificidad .contendioEspecificidad .tabla1 {
