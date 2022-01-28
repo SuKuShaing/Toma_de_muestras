@@ -3,9 +3,9 @@ QUEDE EN:
 ✓ Modificar los texto para SEO
 ✓ Añadir el código <meta> para que al compartir en fb salga todo bien detallado, 
 ✓ Añadir el código para el SEO de google
-- Añadir los rastreadores de google analitycs 
-- Añadir los rastreadores de search console
-- Añadir los rastreadores de Hotjar
+✓ Añadir los rastreadores de google analitycs 
+✓ Añadir los rastreadores de search console
+✓ Añadir los rastreadores de Hotjar
 - Colocar los Rich Snippet
 */
 
